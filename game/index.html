@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Lane — Spot the Difference</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🏮 Lantern Lane</div>
+  <div class="level" id="levelName">Level 1 · Harbor at Dusk</div>
+  <div class="level-sub" id="levelSub">A fishing pier as the sun goes down</div>
+</header>
+
+<section class="hud">
+  <div class="timer">
+    <span id="timerText">1:30</span>
+    <div class="timer-track"><div id="timerBar" class="timer-bar"></div></div>
+  </div>
+  <div class="stat"><b id="foundText">Found 0 / 7</b><span id="remainText">7 still hidden</span></div>
+  <div class="stat"><b id="scoreText">Score 0</b><span id="comboText"></span></div>
+  <div class="stat"><b id="hintText">Hints 3</b><span>press H</span></div>
+  <button id="hintBtn" class="btn">💡 Hint</button>
+  <button id="soundBtn" class="btn">Sound on</button>
+</section>
+
+<main class="boards">
+  <figure class="panel">
+    <figcaption>Picture A — the original</figcaption>
+    <canvas id="panelA" width="560" height="420"></canvas>
+  </figure>
+  <figure class="panel">
+    <figcaption>Picture B — spot what changed</figcaption>
+    <canvas id="panelB" width="560" height="420"></canvas>
+  </figure>
+</main>
+
+<footer class="foot">
+  Click a difference in either picture to circle it · Arrow keys move the crosshair, Enter marks it · H hint · R restart
+</footer>
+
+<div id="overlay" class="overlay hidden"></div>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

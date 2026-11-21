@@ -1,0 +1,152 @@
+/* Lantern Lane — a warm dusk palette; the game art is drawn on canvas. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #171226;
+  color: #f4ead5;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  padding: 12px 22px 4px;
+}
+
+.brand {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ffd166;
+}
+
+.level { font-size: 18px; font-weight: 700; }
+.level-sub { font-size: 13px; color: #b9aed6; }
+
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 8px 22px;
+}
+
+.timer { display: flex; align-items: center; gap: 10px; }
+#timerText { font-size: 24px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.timer-track {
+  width: 180px;
+  height: 10px;
+  background: #2c2344;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.timer-bar {
+  height: 100%;
+  width: 100%;
+  background: #37d67a;
+  border-radius: 6px;
+  transition: width 0.3s linear;
+}
+.timer-bar.low { background: #ff5a5a; }
+
+.stat { display: flex; flex-direction: column; line-height: 1.15; }
+.stat b { font-size: 17px; }
+.stat span { font-size: 12px; color: #b9aed6; }
+#comboText { color: #ffd166; font-weight: 700; }
+
+.btn {
+  background: #2c2344;
+  color: #f4ead5;
+  border: 1px solid #4a3d6b;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn:hover:not(:disabled) { background: #3a2d5c; }
+.btn:disabled { opacity: 0.45; cursor: default; }
+
+.boards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 6px 22px 0;
+}
+
+.panel { margin: 0; }
+.panel figcaption {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffd166;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.panel canvas {
+  display: block;
+  width: 560px;
+  height: 420px;
+  border: 3px solid #4a3d6b;
+  border-radius: 10px;
+  cursor: crosshair;
+  background: #0d1530;
+}
+
+.foot {
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  color: #b9aed6;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 8, 24, 0.82);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  z-index: 10;
+}
+.overlay.hidden { display: none; }
+.overlay h1 {
+  font-size: 44px;
+  margin: 0 0 6px;
+  color: #ffd166;
+}
+.overlay .tag { font-size: 18px; margin: 0 0 18px; color: #e8dcc8; }
+.overlay .rules { max-width: 560px; font-size: 15px; line-height: 1.55; }
+.overlay .rules p { margin: 6px 0; }
+.overlay .levels {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 14px 0 20px;
+  font-size: 14px;
+  color: #b9aed6;
+}
+.overlay .stats {
+  display: flex;
+  gap: 34px;
+  margin: 8px 0 22px;
+}
+.overlay .stats div { display: flex; flex-direction: column; }
+.overlay .stats b { font-size: 30px; color: #ffd166; }
+.overlay .stats span { font-size: 12px; color: #b9aed6; }
+.overlay .keys { font-size: 13px; color: #b9aed6; margin-top: 16px; }
+
+.big {
+  background: #ffd166;
+  color: #241a33;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.big:hover { background: #ffe08a; }
