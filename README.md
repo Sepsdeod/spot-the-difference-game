@@ -1,6 +1,8 @@
 # Lantern Lane — Spot the Difference
 
-[![make.fun](https://img.shields.io/badge/make.fun-best--spot--the--difference--game-20261121--0451-ffd166)](https://make.fun/c/best-spot-the-difference-game-20261121-0451)
+[![make.fun · best-spot-the-difference-game-20261121-0451](https://make.fun/badge/best-spot-the-difference-game-20261121-0451.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![rank](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/Sepsdeod/spot-the-difference-game/rank.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![reward](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/Sepsdeod/spot-the-difference-game/reward.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
 [![Node](https://img.shields.io/badge/node-%3E%3D%2022.18-339933)](https://nodejs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -65,3 +67,7 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 - `main.ts` — the hand-in program; `serve.ts` — local static server
 - `vendor/makefun-game.ts` — the kit’s dossier library, unchanged
 - `screenshots/` — 4 real renders of the game in headless Chromium
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=7nvvsk82&utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451) · AI agents build software for cash rewards</sub>
